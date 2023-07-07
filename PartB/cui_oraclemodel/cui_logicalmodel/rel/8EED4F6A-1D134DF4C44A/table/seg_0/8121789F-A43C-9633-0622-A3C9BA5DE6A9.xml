@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8121789F-A43C-9633-0622-A3C9BA5DE6A9" name="CONTRACT_WASTE_TYPE">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>8AF26BA2-5D98-AF03-A068-A0B023DCCD62</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cwt_id" id="22DAFFCB-045F-552C-290F-27F546467464">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract waste type surrogate key]]></commentInRDBMS>
+<generatorID>ACEFEC82-F8F4-E6E5-315F-C0F40CB080FF</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_no" id="7CF1BAC1-D841-B9CD-3D0E-011C3272EC9C">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Number]]></commentInRDBMS>
+<generatorID>2F230EC6-92D8-0D6E-C4F9-D01009CED42B</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="168FBF40-4AB9-C486-56D8-50996AE13C7C" referredColumn="EF5DA123-4C19-AD49-14C3-64A65199685D"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="2A2F1045-FCA3-C8D8-9BE3-CFD0BE087FE4">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of waste 
+
+not constained to green waste, landfill, standard recycle and glass so that company can easily add new types of waste for each authority]]></commentInRDBMS>
+<generatorID>A88FD76C-183B-DC12-5B0E-02411C285DCB</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE966DB-3F3C-B1AA-14CC-2A2F6AE363EB" referredColumn="80C84629-694B-9D59-0957-1CB7850EDE58"/>
+</associations>
+</Column>
+<Column name="cwt_collection_cost" id="0AC46735-C3F9-DF91-792E-475FFE43CC00">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection cost in dollars per kilogram]]></commentInRDBMS>
+<generatorID>2F3B268F-B698-384C-582B-4BE24CFA8A40</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cwt_collection_frequency" id="F32715DD-8EA1-02AC-786B-E7BF3B19A4EB">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Waste Type Collection Frequency
+
+cwt_collection_frequency constrains to Weekly, Fortnightly and Monthly]]></commentInRDBMS>
+<generatorID>0DED9E3A-57CB-4502-A564-C530E10AF82A</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<constraintName>cwt_collection_frequency</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="Fortnightly" description="F"/>
+<valueDef value="Monthly" description="M"/>
+<valueDef value="Weekly" description="W"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58D4E357-26AF-DC66-43BF-4D3F81028C5F" name="CONTRACT_WASTE_TYPE_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>AA1DC10E-F62E-C0DE-52AF-8F0F45630CC3</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22DAFFCB-045F-552C-290F-27F546467464"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A75B2492-5DB8-88AC-C7BF-8772975476A4" name="contract_waste_type_NK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>84FBAE9C-1801-4A99-F3B8-C9EE34F8203E</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A2F1045-FCA3-C8D8-9BE3-CFD0BE087FE4"/>
+<colUsage columnID="7CF1BAC1-D841-B9CD-3D0E-011C3272EC9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CDC5CF0-8850-FC88-1C3E-38BA76EC36D4" name="contract_contract_waste_type">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>86A03B54-650F-6B89-B05C-0EA6BD47CA32</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CF1BAC1-D841-B9CD-3D0E-011C3272EC9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38B7EF58-B847-5A0B-10BC-691C4389CFE0" name="waste_type_contract_waste_type">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>6E98A7ED-E846-F131-E9FD-94868D4847EE</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A2F1045-FCA3-C8D8-9BE3-CFD0BE087FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

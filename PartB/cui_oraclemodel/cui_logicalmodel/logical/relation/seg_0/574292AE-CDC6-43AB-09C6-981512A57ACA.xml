@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cwt_supply_cost" directorySegmentName="seg_0" id="574292AE-CDC6-43AB-09C6-981512A57ACA">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-05-01 11:09:40 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<sourcePk>AA1DC10E-F62E-C0DE-52AF-8F0F45630CC3</sourcePk>
+<identifying>true</identifying>
+<nameOnSource> </nameOnSource>
+<nameOnTarget>includes a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8AF26BA2-5D98-AF03-A068-A0B023DCCD62</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>26078252-82F0-101E-4D15-CF9D124D5EB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

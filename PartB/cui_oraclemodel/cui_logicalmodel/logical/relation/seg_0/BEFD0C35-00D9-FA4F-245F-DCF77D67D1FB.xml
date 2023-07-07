@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bin_supp_cost" directorySegmentName="seg_0" id="BEFD0C35-00D9-FA4F-245F-DCF77D67D1FB">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-05-01 11:09:55 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<sourcePk>977A7C48-C031-DF4E-892C-BFF7FC8B1AEE</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has a</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C1D31A27-DFEA-41AC-23C8-A314141FADE5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>26078252-82F0-101E-4D15-CF9D124D5EB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="565781E3-36FF-56E2-73B3-1C0DE03498BF" name="BIN">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>C1D31A27-DFEA-41AC-23C8-A314141FADE5</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_id" id="437C6F16-0F9F-EE30-CB66-FEE38343FAE6">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin surrogate key]]></commentInRDBMS>
+<generatorID>B139C716-5005-ED16-D81A-B35FFD38DD75</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_size" id="0FEA1F68-1F38-5C38-E1DD-9BBBD6FC43AA">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[size of bin in Liters]]></commentInRDBMS>
+<generatorID>8779BA2B-9373-9D39-4490-3089D93BD35A</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waste_type_id" id="CB7D7739-D435-EE4B-A4D2-1F963E69686B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of waste 
+
+not constained to green waste, landfill, standard recycle and glass so that company can easily add new types of waste for each authority]]></commentInRDBMS>
+<generatorID>FF173409-45E8-0768-C541-A0225D6E5DC2</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AEC84E5-7337-5AD1-1200-EFB28B000BB4" referredColumn="80C84629-694B-9D59-0957-1CB7850EDE58"/>
+</associations>
+</Column>
+<Column name="bin_standard_supply_cost" id="137C4101-D737-4406-0F8B-BF6BA158926A">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Standard supply cost of a bin in dollars]]></commentInRDBMS>
+<generatorID>D9A3D4CC-C164-3A8B-CE5F-0B97C118BDFB</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B37707E-1AC7-6C1F-4E15-7CBC9D133779" name="BIN_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>977A7C48-C031-DF4E-892C-BFF7FC8B1AEE</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="437C6F16-0F9F-EE30-CB66-FEE38343FAE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B67E797-04C8-12C2-5B16-781F7FE841DB" name="BIN_NK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>C8778501-65B0-0FDB-34F4-D8570308E97D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FEA1F68-1F38-5C38-E1DD-9BBBD6FC43AA"/>
+<colUsage columnID="CB7D7739-D435-EE4B-A4D2-1F963E69686B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B6AF217-A5EF-6CB1-67A1-49FB145D7683" name="WASTE_TYPE_BIN">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>6F77E9EE-4BB3-BA76-D2BE-46F544006D87</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7D7739-D435-EE4B-A4D2-1F963E69686B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

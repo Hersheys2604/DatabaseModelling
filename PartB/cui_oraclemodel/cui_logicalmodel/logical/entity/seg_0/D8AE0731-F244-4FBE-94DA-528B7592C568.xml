@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8AE0731-F244-4FBE-94DA-528B7592C568" name="WASTE_TYPE">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:21:04 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="waste_type_id" id="909B1B20-7BF3-9B18-7002-8EF963A5B693">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:21:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of waste 
+
+not constained to green waste, landfill, standard recycle and glass so that company can easily add new types of waste for each authority]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_description" id="553E587B-88D9-DEB9-1254-ACAC8B2CD6B8">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:21:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[description about the type of waste]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4A8D7BA0-D300-90C3-234E-413B2B5D3C26" name="WASTE_TYPE PK">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:21:21 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>909B1B20-7BF3-9B18-7002-8EF963A5B693</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

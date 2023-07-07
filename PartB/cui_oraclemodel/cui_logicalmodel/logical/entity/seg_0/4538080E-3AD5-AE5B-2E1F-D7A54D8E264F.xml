@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4538080E-3AD5-AE5B-2E1F-D7A54D8E264F" name="BIN_PROPERTY">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:15:59 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_rfid_tag" id="7AFF3C81-040C-B770-E12B-CD787087A761">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:16:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of that particular supplied bin
+
+Constrained by 2 bytes which is 16 hex]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_supply_date" id="C34AA09C-DFA2-15B4-35D2-9B3E24559EDA">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:17:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date that the bin was supplied]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_replacement_reason" id="D55F8BA3-900E-A058-420A-D5BD6C47F3EE">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:17:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[reason for replacing the bin 
+
+Constrained by bin_replacement_reason_constraint to be damaged by owner, bin faileure, damaged duing pickup of waste, stolen]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<constraintName>bin_repl_reason_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="Bin Failure" description="fair use eg old age"/>
+<valueDef value="Damaged by owner" description="Damaged by owner"/>
+<valueDef value="Damaged during pickup of waste" description="damaged during pickup"/>
+<valueDef value="Stolen" description="stolen"/>
+</listOfValues>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_property_supply_cost" id="EEBAADE3-CC4E-9245-055A-6E7950AA63F8">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-05-01 10:30:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[supply cost for a bin to a property (discussion vi), may be differnt to the contract bin supply cost ]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_street_no" id="7F76668A-1979-5A8F-AF67-81902B7CB50A">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Street Number]]></commentInRDBMS>
+<generatorID>2C0F3930-A26C-3107-8D95-8B910BA9187D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>41805B84-7A37-1CAD-BC56-AEFEE593A47A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="4CDA216C-D668-464F-B4C3-CA9385F552B8">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:37:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>2C0F3930-A26C-3107-8D95-8B910BA9187D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>6DCA126F-C03C-81D3-3FC8-51B2C0FF9A3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_name" id="2CBD68C0-4E27-296E-8CCF-780A4ECFDA4E">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:37:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Name]]></commentInRDBMS>
+<generatorID>2C0F3930-A26C-3107-8D95-8B910BA9187D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>ABAB5D37-D72C-A62A-8D19-84A271FFD88F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_id" id="53B04156-EA55-5005-7EB1-901A67BA726B">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-05-01 10:41:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin surrogate key]]></commentInRDBMS>
+<generatorID>28E91984-8017-9689-6DB7-339F3F10B85D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>B139C716-5005-ED16-D81A-B35FFD38DD75</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F2B41BEB-EA5F-9D99-CBC8-ACACB69599CB" name="BIN_PROPERTY PK">
+<createdBy>xyoun</createdBy>
+<createdTime>2023-04-30 07:16:39 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AFF3C81-040C-B770-E12B-CD787087A761</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

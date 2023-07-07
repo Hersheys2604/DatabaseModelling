@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="191AE54E-A883-E35E-1B0D-5DB297FEACCB" name="COLLECTION_MADE">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:21:26 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="collection_date" id="9F88D40B-9B41-6045-7BAD-01E86D8DA7B0">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:30:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection Date]]></commentInRDBMS>
+<generatorID>1419487D-830F-947B-C523-BB263E7EB939</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>0F2012FC-CE5C-3EE5-68AB-D6CF985B52B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_no" id="58B98C08-6C10-5069-C88E-1C56EE55BEE6">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:30:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Number]]></commentInRDBMS>
+<generatorID>1419487D-830F-947B-C523-BB263E7EB939</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>B429B226-CE66-1949-9E61-028AE944B3E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_rfid_tag" id="E25D22FA-7E9C-3709-2AA7-4155730E1F01">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:31:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of that particular supplied bin
+
+Constrained by 2 bytes which is 16 hex]]></commentInRDBMS>
+<generatorID>13E87367-607C-A06D-4490-05828465F517</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<referedAttribute>7AFF3C81-040C-B770-E12B-CD787087A761</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="collection_made_weight" id="4F4F2272-B953-56FE-D59A-6229447445EF">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:21:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weight of Collection Made
+
+discussion ix is constrained by primary key of date and bin such that the same bin(which has one waste type) cannot be collected twice on the same day
+]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="collection_made_overweight" id="74BDC892-D9F8-2921-C748-7463817F6B67">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:22:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection Made OverWeight
+
+constrained by Y and N 
+If the bin is flagged as overweight (Y) is added]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<constraintName>cm_overweight_constr</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="not overweight"/>
+<valueDef value="Y" description="overweight"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F6EA3D1-065E-18E7-73BB-3F4857DA5ED6" name="COLLECTION_MADE PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:30:52 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9F88D40B-9B41-6045-7BAD-01E86D8DA7B0</attributeRef>
+<attributeRef>58B98C08-6C10-5069-C88E-1C56EE55BEE6</attributeRef>
+<attributeRef>E25D22FA-7E9C-3709-2AA7-4155730E1F01</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

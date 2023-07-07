@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEB679A8-A8A9-281A-23E3-0A491522AC38" name="COLLECTION_ROUTE">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>E9B688FD-A12E-72A4-1AB7-57FD262216E6</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="collection_date" id="1ABEDAB5-8241-6857-90FB-C18FB6B61E99">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection Date]]></commentInRDBMS>
+<generatorID>0F2012FC-CE5C-3EE5-68AB-D6CF985B52B5</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_no" id="DFD19B2C-BB4E-3CE2-FA33-3FB20468D4EB">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Number]]></commentInRDBMS>
+<generatorID>B429B226-CE66-1949-9E61-028AE944B3E6</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2A55797-B6E2-00A4-D96B-7C74E8054FDE" referredColumn="EF5DA123-4C19-AD49-14C3-64A65199685D"/>
+</associations>
+</Column>
+<Column name="truck_vin" id="D5894262-ECC4-0E5B-9197-B3540D649F9B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck VIN]]></commentInRDBMS>
+<generatorID>A83AC0F9-4DD1-FD21-4D09-E6691F9A78CA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B54B0186-20D7-0AC2-60F0-D01DEFF0F7A8" referredColumn="256B92C0-747C-0A18-26EB-7D32548794C6"/>
+</associations>
+</Column>
+<Column name="driver_no" id="B8016550-6BE5-0ED6-80E0-032EF5060F9D">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Number]]></commentInRDBMS>
+<generatorID>AE17576F-A849-5187-4B9F-D56546A42F53</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8ABCD2E-A294-36AF-C52B-2BA46D60B11B" referredColumn="B90DD92B-884E-4668-76F8-5C0C518B7EAF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F208E8B-4BE0-500D-A097-06DD92F97D45" name="COLLECTION_ROUTE_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>0CF5C2DC-14F0-B2CC-043A-1E4E1E7E0D0A</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ABEDAB5-8241-6857-90FB-C18FB6B61E99"/>
+<colUsage columnID="DFD19B2C-BB4E-3CE2-FA33-3FB20468D4EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AECE706B-6D23-58F6-2A7B-A5B26C8AD9F9" name="contract_collection_route">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>5BC1132E-0E14-C5F8-416E-0D035EC35832</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFD19B2C-BB4E-3CE2-FA33-3FB20468D4EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="702071C0-21B0-02AB-726E-9E9BDF25AC37" name="driver_collection_route">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>C91E16C7-686D-48E3-55C7-402A21B3444F</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8016550-6BE5-0ED6-80E0-032EF5060F9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE550EDC-DD46-5C57-3C81-DD0511B76342" name="truck_collection_route">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>D31D9F10-9DEA-A44F-4DE3-AEE351AE4CE4</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5894262-ECC4-0E5B-9197-B3540D649F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

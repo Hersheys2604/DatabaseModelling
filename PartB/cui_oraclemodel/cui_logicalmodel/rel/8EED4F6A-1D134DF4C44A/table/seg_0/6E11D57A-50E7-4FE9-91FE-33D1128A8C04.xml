@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E11D57A-50E7-4FE9-91FE-33D1128A8C04" name="COLLECTION_MADE">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>191AE54E-A883-E35E-1B0D-5DB297FEACCB</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="collection_date" id="8500DD3F-FD74-CAFE-12EA-92A97F8FC39D">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection Date]]></commentInRDBMS>
+<generatorID>9F88D40B-9B41-6045-7BAD-01E86D8DA7B0</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39011B12-591D-F6F7-5351-BB92B64F988B" referredColumn="1ABEDAB5-8241-6857-90FB-C18FB6B61E99"/>
+</associations>
+</Column>
+<Column name="contract_no" id="C7CD8D27-4D1A-53B7-1D27-9CE8E26835B2">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract Number]]></commentInRDBMS>
+<generatorID>58B98C08-6C10-5069-C88E-1C56EE55BEE6</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39011B12-591D-F6F7-5351-BB92B64F988B" referredColumn="DFD19B2C-BB4E-3CE2-FA33-3FB20468D4EB"/>
+</associations>
+</Column>
+<Column name="bin_rfid_tag" id="D553BF52-DB5F-ECC5-5F87-C8B2A14F866D">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of that particular supplied bin
+
+Constrained by 2 bytes which is 16 hex]]></commentInRDBMS>
+<generatorID>E25D22FA-7E9C-3709-2AA7-4155730E1F01</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D3DF16D-8B12-A4C8-AB69-C4EFA4B89053" referredColumn="B659F01B-D521-6D73-64BA-7FEB22AE63FE"/>
+</associations>
+</Column>
+<Column name="collection_made_weight" id="30FB4CC4-CA98-6397-309B-9E40456E07DD">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weight of Collection Made
+
+discussion ix is constrained by primary key of date and bin such that the same bin(which has one waste type) cannot be collected twice on the same day
+]]></commentInRDBMS>
+<generatorID>4F4F2272-B953-56FE-D59A-6229447445EF</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="collection_made_overweight" id="68677A08-6A1F-4076-D2CA-98F750C1FD2B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection Made OverWeight
+
+constrained by Y and N 
+If the bin is flagged as overweight (Y) is added]]></commentInRDBMS>
+<generatorID>74BDC892-D9F8-2921-C748-7463817F6B67</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<constraintName>cm_overweight_constr</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="not overweight"/>
+<valueDef value="Y" description="overweight"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A123DE20-B82B-DBDF-B3CE-C493A3FDDCB8" name="COLLECTION_MADE_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>8F6EA3D1-065E-18E7-73BB-3F4857DA5ED6</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8500DD3F-FD74-CAFE-12EA-92A97F8FC39D"/>
+<colUsage columnID="C7CD8D27-4D1A-53B7-1D27-9CE8E26835B2"/>
+<colUsage columnID="D553BF52-DB5F-ECC5-5F87-C8B2A14F866D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="528786F4-FFBE-9449-9C38-1CF56C7D8EA3" name="bin_collection_made">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>13E87367-607C-A06D-4490-05828465F517</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D553BF52-DB5F-ECC5-5F87-C8B2A14F866D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB301A97-2113-BF86-ED87-473DA513D187" name="c_route_c_made">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>1419487D-830F-947B-C523-BB263E7EB939</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8500DD3F-FD74-CAFE-12EA-92A97F8FC39D"/>
+<colUsage columnID="C7CD8D27-4D1A-53B7-1D27-9CE8E26835B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

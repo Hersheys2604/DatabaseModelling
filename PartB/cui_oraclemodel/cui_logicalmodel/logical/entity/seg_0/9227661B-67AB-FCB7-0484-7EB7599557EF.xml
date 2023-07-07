@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9227661B-67AB-FCB7-0484-7EB7599557EF" name="DRIVER">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:22:50 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="driver_no" id="C76D0DDF-6D08-DABF-AA36-D0B3240B3260">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:23:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Number]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_contact_number" id="01B3EF04-B715-DEE2-A8B5-1CF84C87C03B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:23:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Contact Number]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_license_number" id="95E7D748-CB91-7A67-82B3-039AA2F9D234">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:23:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver License Number]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_name" id="49DCA5E0-2C14-7561-0EE3-DE15A8CC50C2">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Name]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_dob" id="D222D27F-0586-54C5-F0C0-2B77A295BE5B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:24:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Date of Birth]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_tfn" id="530B82D5-2617-7550-C3B6-EBC54A378F89">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:24:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver TFN]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F8D4F285-30EF-59BD-740D-B425D5212E6D" name="DRIVER PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:23:14 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C76D0DDF-6D08-DABF-AA36-D0B3240B3260</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="88ADE5AC-53B1-F30B-7C5A-8ADF6CED6682" containerWithKeyObject="A96AF239-77BF-64CA-90A9-B8A7CE50F585" localFKIndex="75F53AD6-B769-6EDC-7AE5-3A4D760B47CE" name="cwt_supply_cost">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>574292AE-CDC6-43AB-09C6-981512A57ACA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<referredTableLongName>CONTRACT_WASTE_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8121789F-A43C-9633-0622-A3C9BA5DE6A9</referredTableID>
+<keyObject>58D4E357-26AF-DC66-43BF-4D3F81028C5F</keyObject>
+<referredKeyID>58D4E357-26AF-DC66-43BF-4D3F81028C5F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cwt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="39011B12-591D-F6F7-5351-BB92B64F988B" containerWithKeyObject="6E11D57A-50E7-4FE9-91FE-33D1128A8C04" localFKIndex="EB301A97-2113-BF86-ED87-473DA513D187" name="c_route_c_made">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>1419487D-830F-947B-C523-BB263E7EB939</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<referredTableLongName>COLLECTION_ROUTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BEB679A8-A8A9-281A-23E3-0A491522AC38</referredTableID>
+<keyObject>5F208E8B-4BE0-500D-A097-06DD92F97D45</keyObject>
+<referredKeyID>5F208E8B-4BE0-500D-A097-06DD92F97D45</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>collection_date,contract_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

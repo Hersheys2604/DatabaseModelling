@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver_truck_driver" directorySegmentName="seg_0" id="07DFB98F-92DB-A5F9-D4B9-30DD90186BAA">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-30 08:36:14 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<sourcePk>F8D4F285-30EF-59BD-740D-B425D5212E6D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource> </nameOnSource>
+<nameOnTarget> drives</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9227661B-67AB-FCB7-0484-7EB7599557EF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DEF978AD-B312-A935-648F-B2E783E54E15</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

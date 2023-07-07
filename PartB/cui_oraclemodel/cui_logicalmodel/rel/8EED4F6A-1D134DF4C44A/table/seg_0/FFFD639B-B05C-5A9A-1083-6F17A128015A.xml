@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFFD639B-B05C-5A9A-1083-6F17A128015A" name="TRUCK_DRIVER">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>DEF978AD-B312-A935-648F-B2E783E54E15</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="truck_vin" id="67DDBF5E-783E-27D5-A877-8FD3508D0D45">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck VIN]]></commentInRDBMS>
+<generatorID>F819525E-887D-4999-0E52-E15EEADD6531</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD17EEF6-798A-AC91-A498-54C6C3B00FBF" referredColumn="256B92C0-747C-0A18-26EB-7D32548794C6"/>
+</associations>
+</Column>
+<Column name="driver_no" id="BC087DDF-4EF6-A9D9-DD84-9329A6A54325">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver Number]]></commentInRDBMS>
+<generatorID>0D9AE012-4FA9-8EFE-1B75-1D2B2D357500</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A47E272C-D1EE-FFD9-8C7D-F13CA3C65EF1" referredColumn="B90DD92B-884E-4668-76F8-5C0C518B7EAF"/>
+</associations>
+</Column>
+<Column name="truck_driver_approved" id="B9269EAA-5542-371C-13C5-E72E5BB5713F">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates if the truck diver is approved to drive that car
+Constrained by Y and N in truct_driver_approved_constraint]]></commentInRDBMS>
+<generatorID>2D1A8BEC-502D-637A-B2AA-50C01C3B912F</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<constraintName>td_approved_constraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="no"/>
+<valueDef value="Y" description="yes"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94D2AD87-1CA5-D2D5-4938-8085FFC575FD" name="TRUCK_DRIVER_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>1C52625A-8516-6144-6BD3-58E54D3012CA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67DDBF5E-783E-27D5-A877-8FD3508D0D45"/>
+<colUsage columnID="BC087DDF-4EF6-A9D9-DD84-9329A6A54325"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7440F84-C129-9E2A-7A09-1EC078CBD81C" name="driver_truck_driver">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>07DFB98F-92DB-A5F9-D4B9-30DD90186BAA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC087DDF-4EF6-A9D9-DD84-9329A6A54325"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7776B32-CCC3-8303-8E2A-528B1A43FB64" name="truck_truck_driver">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>5A656B8C-5D58-C7BA-FAAF-CAAEFD3586E1</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67DDBF5E-783E-27D5-A877-8FD3508D0D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

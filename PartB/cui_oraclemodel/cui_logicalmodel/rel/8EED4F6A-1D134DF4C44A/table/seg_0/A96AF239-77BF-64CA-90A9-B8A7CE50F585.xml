@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A96AF239-77BF-64CA-90A9-B8A7CE50F585" name="SUPPLY_COST">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>26078252-82F0-101E-4D15-CF9D124D5EB9</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="supply_cost_contract" id="E9C6C19E-63F4-C94C-E336-00EAF4DE12AB">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply cost defined in the contract]]></commentInRDBMS>
+<generatorID>1B9D6798-31D8-23D0-481C-584E81683A52</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cwt_id" id="BE7C56FC-1689-B62A-3B6C-FE17089F9CBC">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract waste type surrogate key]]></commentInRDBMS>
+<generatorID>F492251F-1D1B-F841-408D-C1840BDAFAA3</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88ADE5AC-53B1-F30B-7C5A-8ADF6CED6682" referredColumn="22DAFFCB-045F-552C-290F-27F546467464"/>
+</associations>
+</Column>
+<Column name="bin_id" id="2B38D5E0-2C03-370B-04EE-EA05E91875BB">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin surrogate key]]></commentInRDBMS>
+<generatorID>C8AC5753-B01B-98C8-2B7E-9AE9E57E5189</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AEF1CD6-6627-AB3D-3CE6-4EFDB29EF110" referredColumn="437C6F16-0F9F-EE30-CB66-FEE38343FAE6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB51EBCC-8F54-B8BD-E9E1-40CE876D85B9" name="SUPPLY_COST_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>16CF0EF3-241A-BF1A-DA53-59F4146E9F1B</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE7C56FC-1689-B62A-3B6C-FE17089F9CBC"/>
+<colUsage columnID="2B38D5E0-2C03-370B-04EE-EA05E91875BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9ADAEF57-0A47-990E-7FAA-3665BF3EE12B" name="bin_supp_cost">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>BEFD0C35-00D9-FA4F-245F-DCF77D67D1FB</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B38D5E0-2C03-370B-04EE-EA05E91875BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75F53AD6-B769-6EDC-7AE5-3A4D760B47CE" name="cwt_supply_cost">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>574292AE-CDC6-43AB-09C6-981512A57ACA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE7C56FC-1689-B62A-3B6C-FE17089F9CBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

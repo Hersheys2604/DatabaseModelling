@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78A7BCA8-7D5A-8B05-38D1-C4D3394DC8C7" name="BIN_PROPERTY">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>4538080E-3AD5-AE5B-2E1F-D7A54D8E264F</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_rfid_tag" id="B659F01B-D521-6D73-64BA-7FEB22AE63FE">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of that particular supplied bin
+
+Constrained by 2 bytes which is 16 hex]]></commentInRDBMS>
+<generatorID>7AFF3C81-040C-B770-E12B-CD787087A761</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_supply_date" id="43E8D64F-E80B-8961-6E9E-8C9FC6974372">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date that the bin was supplied]]></commentInRDBMS>
+<generatorID>C34AA09C-DFA2-15B4-35D2-9B3E24559EDA</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_replacement_reason" id="A2E48AFC-08C0-DC9E-3F33-B08FCF34EB1B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[reason for replacing the bin 
+
+Constrained by bin_replacement_reason_constraint to be damaged by owner, bin faileure, damaged duing pickup of waste, stolen]]></commentInRDBMS>
+<generatorID>D55F8BA3-900E-A058-420A-D5BD6C47F3EE</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<constraintName>bin_repl_reason_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="Bin Failure" description="fair use eg old age"/>
+<valueDef value="Damaged by owner" description="Damaged by owner"/>
+<valueDef value="Damaged during pickup of waste" description="damaged during pickup"/>
+<valueDef value="Stolen" description="stolen"/>
+</listOfValues>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_property_supply_cost" id="91342755-091A-0250-9DC4-EF6151176798">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[supply cost for a bin to a property (discussion vi), may be differnt to the contract bin supply cost ]]></commentInRDBMS>
+<generatorID>EEBAADE3-CC4E-9245-055A-6E7950AA63F8</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="property_street_no" id="7454E853-DD95-8C5B-1AFA-59E4A35DCA25">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Street Number]]></commentInRDBMS>
+<generatorID>7F76668A-1979-5A8F-AF67-81902B7CB50A</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D7ADCBF-9E1A-45CF-B883-65B24FE98AD2" referredColumn="06B342DC-0773-82DC-58A0-49D971215C4F"/>
+</associations>
+</Column>
+<Column name="street_id" id="647736CF-1E60-16D1-847E-0C0946F79520">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>4CDA216C-D668-464F-B4C3-CA9385F552B8</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D7ADCBF-9E1A-45CF-B883-65B24FE98AD2" referredColumn="A8BAEF3C-B4D7-9C5F-C62A-299EE41C9D18"/>
+</associations>
+</Column>
+<Column name="auth_name" id="D124AA6F-7AF6-2263-F6A3-A51222D68E6E">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Name]]></commentInRDBMS>
+<generatorID>2CBD68C0-4E27-296E-8CCF-780A4ECFDA4E</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D7ADCBF-9E1A-45CF-B883-65B24FE98AD2" referredColumn="5071F0B4-A0B4-16FB-C500-17894549F4B2"/>
+</associations>
+</Column>
+<Column name="bin_id" id="7B3F4A57-BA2A-7EF3-F039-EE9AE40CD62B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin surrogate key]]></commentInRDBMS>
+<generatorID>53B04156-EA55-5005-7EB1-901A67BA726B</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D96A1C67-4AB3-E9CA-E2D6-0F22C726B2FE" referredColumn="437C6F16-0F9F-EE30-CB66-FEE38343FAE6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D46DAAD-2443-74F5-19AF-D2EE3A023010" name="BIN_PROPERTY_PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>F2B41BEB-EA5F-9D99-CBC8-ACACB69599CB</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B659F01B-D521-6D73-64BA-7FEB22AE63FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A25AD9F1-4B6A-9443-B8C5-A5950B8BA93D" name="bin_bin_property">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>28E91984-8017-9689-6DB7-339F3F10B85D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B3F4A57-BA2A-7EF3-F039-EE9AE40CD62B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C24908F-A3A1-155D-23EE-A33F44FB35AA" name="property_property_ownerv2">
+<createdBy>harshath</createdBy>
+<createdTime>2023-05-03 03:11:32 UTC</createdTime>
+<generatorID>2C0F3930-A26C-3107-8D95-8B910BA9187D</generatorID>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7454E853-DD95-8C5B-1AFA-59E4A35DCA25"/>
+<colUsage columnID="647736CF-1E60-16D1-847E-0C0946F79520"/>
+<colUsage columnID="D124AA6F-7AF6-2263-F6A3-A51222D68E6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

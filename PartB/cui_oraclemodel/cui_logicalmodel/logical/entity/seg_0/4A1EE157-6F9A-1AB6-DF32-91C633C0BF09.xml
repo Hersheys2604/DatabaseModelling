@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A1EE157-6F9A-1AB6-DF32-91C633C0BF09" name="AUTHORITY">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:38:57 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_name" id="6C4CA193-444B-95DB-D6A4-F3EAE92FA160">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:39:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Name]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_ceo_fname" id="843AC8AD-AB90-EAF8-B6F5-8C4F9FE1D21B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:39:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority CEO First Name]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_ceo_lname" id="65478253-D263-C75C-212F-5F6D9851F6D7">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:39:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority CEO Last Name]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_total_area" id="9E68A9BE-901D-EE9A-9079-626FE07C41A6">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:40:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Total Area]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_type" id="3D882ED6-0243-F97B-F930-30771839724B">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Type
+Must be one of Borough, City, District Council, Shire or Town as defined by 
+auhtority_type constraint]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<constraintName>authority_type_constraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="Borough" description=""/>
+<valueDef value="City" description=""/>
+<valueDef value="District Council" description=""/>
+<valueDef value="Shire" description=""/>
+<valueDef value="Town" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_telnumber" id="AE8F54A8-0108-9861-962D-2136826439D7">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Telephone Number]]></commentInRDBMS>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C41FDC8-AABF-EBEE-5982-57AD5C88DC15" name="AUTHORITY PK">
+<createdBy>harshath</createdBy>
+<createdTime>2023-04-29 08:39:23 UTC</createdTime>
+<ownerDesignName>cui_logicalmodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8EED4F6A-4249-513B-26FF-1D134DF4C44A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C4CA193-444B-95DB-D6A4-F3EAE92FA160</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
